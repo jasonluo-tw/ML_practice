@@ -38,4 +38,5 @@ for idx, model in enumerate(methods):
     plt.legend(loc='upper left')
     plt.title(names[idx])
 
-plt.show()
+#plt.show()
+plt.savefig('ML_practice.png')
