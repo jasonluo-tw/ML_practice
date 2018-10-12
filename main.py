@@ -26,7 +26,7 @@ methods.append(knn())
 
 ## start the loop
 plt.rcParams['axes.unicode_minus']=False
-plt.figure()
+plt.figure(1, figsize=(12,10))
 for idx, model in enumerate(methods):
     model.fit(X_train_std, y_train)
     
@@ -39,4 +39,6 @@ for idx, model in enumerate(methods):
     plt.title(names[idx])
 
 #plt.show()
+plt.tight_layout()
+
 plt.savefig('ML_practice.png')
