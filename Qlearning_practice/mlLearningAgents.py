@@ -155,9 +155,9 @@ class QLearnAgent(Agent):
             return best_move
 
     def update(self, state, action, new_state, reward, legal_actions):
-        # update the Qfuns
-        if reward > -500 and reward < 0:
-            reward = 0
+        ## update the Qfuns
+        #if reward > -500 and reward < 0:
+        #    reward = 0
 
         if legal_actions:
             Q = []
